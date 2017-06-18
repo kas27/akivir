@@ -1,0 +1,53 @@
+%svg-common {
+	background: url("sprite.svg") no-repeat;
+}
+
+%-buttons--closed {
+	@extend %svg-common;
+	background-position: 0 0;
+	width: 16px;
+	height: 16px;
+}
+
+%-login--closed {
+	@extend %svg-common;
+	background-position: 0 6.896551724137931%;
+	width: 16px;
+	height: 16px;
+}
+
+%-login--open {
+	@extend %svg-common;
+	background-position: 0 13.793103448275861%;
+	width: 16px;
+	height: 16px;
+}
+
+%-menu--cat {
+	@extend %svg-common;
+	background-position: 0 26.08695652173913%;
+	width: 64px;
+	height: 64px;
+}
+
+%-twitter {
+	@extend %svg-common;
+	background-position: 0 50.224215246636774%;
+	width: 37.5px;
+	height: 25px;
+}
+
+%-wastebasket {
+	@extend %svg-common;
+	background-position: 0 84.41158348736906%;
+	width: 76.6px;
+	height: 85.7px;
+}
+
+%-youtube {
+	@extend %svg-common;
+	background-position: 0 100%;
+	width: 37.5px;
+	height: 25px;
+}
+

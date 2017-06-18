@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'roboto';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../assets/fonts/Roboto/Roboto-Regular.eot');
+  src: local('☺'), url('../assets/fonts/Roboto/Roboto-Regular.woff') format('woff'),
+  url('../assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype'),
+  url('../assets/fonts/Roboto/Roboto-Regular.svg') format('svg');
+}
+
+$base__font-size: 1;
+
+body{
+  background: $color-1-1;
+  font-family: $font-base;
+  // #sweets-menu{
+  //   @extend %-youtube;
+  //   color: red;
+  // }
+
+}
+p, span, a{
+  font-size: em(1.6, $base__font-size);
+  color: $color-1-2;
+
+}
+a{
+  color: tomato;
+  &:hover{
+    text-decoration: none;
+  }
+}
+h2{
+  font-size: em(3.2, $base__font-size);
+  @extend .basic-title;
+}
+h3{
+  font-size: em(2.2, $base__font-size);
+  @extend .basic-title;
+}
+h4{
+  font-size: em(1.8, $base__font-size);
+  @extend .basic-title;
+}
+.clear-fix {
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    speak: none;
+  }
+}
+.basic-title{
+  line-height: em(1.2, $base__font-size);
+  padding-bottom: em(.8, $base__font-size);
+  color: $color-2-2;
+}
+.basic-wrapper {
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  @extend .clear-fix;
+}
+.wrapper{
+  max-width: 112rem;
+  width: 100%;
+  background: $color-white;
+  @extend .basic-wrapper;
+}
+.wrap{
+  position: relative;
+}

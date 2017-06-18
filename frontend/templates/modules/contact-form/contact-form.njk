@@ -1,0 +1,65 @@
+<section class="contact-form">
+  <h2 class="contact-form__title">Contact page</h2>
+  <form>
+    <label><span>Name</span><input type="text"></label>
+    <label><span>Phone</span><input type="tel"></label>
+    <label><span>E-Mail</span><input type="email"></label>
+    <label><span>Date</span><input type="number"></label>
+    <label><span>Comment</span><textarea name="" id="" cols="30" rows="10"></textarea></label>
+    <div class="group group_select">
+      <span>Geburtsdatum</span>
+      <div class="select number input-min">
+        <span class="select_icon"><input type="text" class="select__input"></span>
+        <ul class="select__list">
+          <li><a class="select__item" href="#">1</a></li>
+          <li><a class="select__item" href="#">2</a></li>
+          <li><a class="select__item" href="#">3</a></li>
+          <li><a class="select__item" href="#">4</a></li>
+        </ul>
+      </div>
+      <div class="select year input-min">
+        <span class="select_icon"><input type="text" class="select__input"></span>
+        <ul class="select__list">
+          <li><a class="select__item" href="#">2017</a></li>
+          <li><a class="select__item" href="#">2016</a></li>
+          <li><a class="select__item" href="#">2015</a></li>
+          <li><a class="select__item" href="#">2014</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="group group_radio-button">
+      <h3>Group radio-button</h3>
+      <div class="wrap wrap_radio">
+        <input type="radio" name="course_type" value="driving" checked="" id="radio-1">
+        <label for="radio-1">... für den Führerschein</label>
+      </div>
+      <div class="wrap-radio">
+        <input type="radio" name="course_type" value="company" id="radio-2">
+        <label for="radio-2">... als betrieblicher Ersthelfer</label>
+      </div>
+      <div class="wrap-radio">
+        <input type="radio" name="course_type" value="refresh" id="radio-3">
+        <label for="radio-3">... zur Auffrischung</label>
+      </div>
+      <div class="wrap-radio">
+        <input type="radio" name="course_type" value="just_because" id="radio-4">
+        <label for="radio-4">... einfach so</label>
+      </div>
+    </div>
+    <div class="group group_checkbox">
+      <h3>Group checkbox</h3>
+      <div class="wrap wrap_checkbox">
+        <input  id="checkbox-1" type="checkbox" checked>
+        <label for="checkbox-1">Checkbox 1</label>
+      </div>
+      <div class="wrap wrap_checkbox">
+        <input  id="checkbox-2" type="checkbox">
+        <label for="checkbox-2">Checkbox 2</label>
+      </div>
+      <div class="wrap wrap_checkbox">
+        <input  id="checkbox-3" type="checkbox" disabled>
+        <label for="checkbox-3">Checkbox 3</label>
+      </div>
+    </div>
+  </form>
+</section>

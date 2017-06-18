@@ -1,0 +1,46 @@
+input[type="radio"]{
+  position: absolute;
+  opacity: 0;
+  left: 0;
+  & + label{
+    position: relative;
+    display: block;
+    margin: 0 3rem 0 0;
+    padding: 0 0 0 3rem;
+    line-height: 2rem;
+    &:hover{
+      cursor: pointer;
+    }
+    &:before{
+      content: '\f00c';
+      font-family: FontAwesome;
+      position: absolute;
+      color: $color-4-1;
+      display: none;
+      font-size: 12px;
+      top: 5px;
+      line-height: 1;
+      left: 2px;
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      background: #fff;
+      border: 1px solid $color-4-1;
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+    }
+  }
+  &:focus + label:after {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+  &:checked{
+    & + label:before{
+      display: block;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{% extends "layouts/default.njk" %}
+
+{# Variables #}
+{% set titlePage = 'contact' %}
+
+{% block content %}
+  <article id="content" class="section-main">
+    <div class="section-main__content">
+      {% include "modules/contact-form/contact-form.njk"%}
+    </div>
+    <div class="section-main__aside"></div>
+  </article>
+{% endblock %}

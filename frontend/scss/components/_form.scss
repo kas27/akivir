@@ -1,0 +1,29 @@
+$form__font-size: 1;
+
+input,
+textarea{
+  border: 1px solid $color-1-2;
+  border-radius: .5rem;
+  padding: 1rem;
+  width: 100%;
+  color: $color-1-2;
+  font-size: em(1.6, $form__font-size);
+  font-family: $font-base;
+}
+textarea{
+  resize: none;
+}
+label{
+  display: flex;
+  span{
+    min-width: 12rem;
+  }
+  & + label{
+    margin-top: 1.5rem;
+  }
+}
+.group{
+  & + .group{
+    margin-top: 2rem;
+  }
+}

@@ -1,0 +1,40 @@
+$button__font-size: 1;
+
+body{
+  // background: lighten(#000000, 40%) url("../assets/img/post/post-other1.jpg") no-repeat;
+  // .icon2{
+  //   background: #fff url("../assets/img/buttons/gulp.png") no-repeat;
+  //   width: 80px;
+  //   height: 120px;
+  //   display: block;
+  // }
+  // .goo{
+  //   @extend %-buttons--closed;
+  // }
+}
+.button{
+  font-size: em(1.6, $button__font-size);
+  font-weight: $normal;
+  line-height: 1.2;
+  background: $color-3-2;
+  color: $color-white;
+  padding: em(.7, $button__font-size) em(1, $button__font-size);
+  transition: .4s;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: baseline;
+  box-shadow: 2px 2px 3px 1px rgba($color-1-2, .5);
+  &:hover,
+  &:focus{
+    background: darken($color-3-2, 10%);
+    text-decoration: none;
+  }
+  &_icon{
+    &:before{
+      content: '\f2ba';
+      font-family: FontAwesome;
+      margin-right: .5rem;
+      font-size: em(1, $button__font-size);
+    }
+  }
+}

@@ -1,0 +1,143 @@
+$tabs__font-size: 1;
+
+.tabs{
+  display: flex;
+  @include respond-to(tablet-l) {
+    flex-wrap: wrap;
+  }
+  &__menu{
+    width: 30%;
+    padding-left: 3rem;
+    @include respond-to(tablet-l) {
+      width: 100%;
+      padding: 0;
+      order: 1;
+    }
+    a{
+      display: block;
+    }
+    &-link{
+      &_first{
+        color: $color-5-1;
+        font-size: em(1.6, $tabs__font-size);
+        padding: .5rem 1rem;
+        border: 3px solid $color-1-2;
+        margin-bottom: 1rem;
+        &:after{
+          content: '\f078';
+          font-size: em(1.2, $tabs__font-size);
+          font-family:  FontAwesome;
+          line-height: 1.2;
+          color: $color-white;
+          float: right;
+          display: none;
+          transition: .4s;
+        }
+        @include respond-to(tablet-l) {
+          margin-bottom: 0;
+          background: $color-2-1;
+          border-width: 1px;
+          border-color: $color-2-1 $color-2-1 $color-white $color-2-1;
+          color: $color-white;
+          padding: 2rem 3rem;
+          &:after{
+            display: block;
+          }
+        }
+      }
+      &_second{
+        color: $color-4-1;
+        font-size: em(1.2, $tabs__font-size);
+        font-weight: $semibold;
+        padding: .5rem 0;
+        &:after{
+          content: '\f078';
+          font-size: em(1.2, $tabs__font-size);
+          font-family:  FontAwesome;
+          line-height: 1.2;
+          margin-right: .3rem;
+          color: $color-white;
+          float: right;
+          display: none;
+          transition: .4s;
+        }
+        @include respond-to(tablet-l) {
+          background: $color-1-2;
+          color: $color-white;
+          padding: 1rem 3rem;
+          &:after{
+            display: block;
+          }
+        }
+      }
+      &_third{
+        font-size: em(1.2, $tabs__font-size);
+        color: $color-4-1;
+        padding: .5rem 0;
+        @include respond-to(tablet-l) {
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
+      }
+    }
+  }
+  &__content{
+    width: 70%;
+    @include respond-to(tablet-l) {
+      width: 100%;
+      order: 2;
+    }
+    &-item{
+      display: none;
+      padding: 2rem 5rem 2rem 2rem;
+      p{
+        color: $color-white;
+      }
+      &.active{
+        display: block;
+      }
+    }
+  }
+  &__list{
+    &_first-level{
+      & .show{
+        .tabs__menu-link_first{
+          &:after{
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    &_second-level{
+      & .show{
+        .tabs__menu-link_second{
+          &:after{
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    &_second-level,
+    &_third-level{
+      display: none;
+      padding-left: 2rem;
+      margin-bottom: 1rem;
+    }
+    &_second-level,
+    &_third-level{
+      @include respond-to(tablet-l) {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  [id^='first-']{
+    background: red;
+  }
+  [id^='second-']{
+    background: blue;
+  }
+  [id^='third-']{
+    background: green;
+  }
+}

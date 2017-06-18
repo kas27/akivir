@@ -1,0 +1,6 @@
+.header{
+  &__wrapper{
+    @extend .wrapper;
+    background: $color-1-2;
+  }
+}

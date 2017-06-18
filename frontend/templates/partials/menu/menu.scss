@@ -1,0 +1,36 @@
+$menu__font-size: 1;
+
+.menu{
+  display: flex;
+  &_wrap{
+    @extend .wrapper;
+    
+  }
+  &__item{
+    display: block;
+    padding: 1rem;
+  }
+  &__drop{
+    position: relative;
+    & > a{
+      &:after{
+        content: '\f0d7';
+        font-family: FontAwesome;
+        margin-left: .5rem;
+      }
+    }
+  }
+  &__second{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: $color-white;
+  }
+  &.active{
+    .menu__second{
+      display: block;
+    }
+  }
+}

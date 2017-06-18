@@ -1,0 +1,23 @@
+@import '../../tmp/scss/sprite';
+@import 'components/reset';
+@import 'components/variable';
+@import 'components/mixins';
+@import 'components/base';
+@import 'components/fonts';
+@import 'components/grid';
+@import 'components/form';
+@import 'components/header';
+@import 'components/footer';
+
+// modules
+@import '../templates/modules/bots/bots';
+// @import '../templates/modules/buttons/buttons';
+// @import '../templates/modules/form-elements/select-custom/select-custom';
+// @import '../templates/modules/form-elements/checkbox/checkbox';
+// @import '../templates/modules/form-elements/radio-button/radio-button';
+// @import '../templates/modules/tabs/tabs';
+
+// partials
+@import '../templates/partials/header/authorization/authorization';
+@import '../templates/partials/header/logo/logo';
+// @import '../templates/partials/menu/menu';
